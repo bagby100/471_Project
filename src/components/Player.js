@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useSphere } from 'use-cannon';
-import { useThree, useFrame } from 'react-three-fiber';
+import { useThree, useFrame} from 'react-three-fiber';
+
+
 
 export const Player = (props) => {
+    
     const { camera } = useThree();
-    const [ref] = useSphere(() => ({
+    const [ref] = useSphere (() => ({
         mass: 1,
         type: 'Dynamic',
-        ...props
+        ...props,
     }));
 
     useFrame(() => {
@@ -15,7 +18,8 @@ export const Player = (props) => {
     });
     return (
         <>
-        <mesh ref={ref} />
+        <mesh ref= {ref} />
         </>
     );
+
 };
