@@ -1,7 +1,7 @@
 import React from 'react';
 import { Canvas } from 'react-three-fiber';
 
-import { Sky } from 'drei';
+import { Stars } from 'drei';
 import { Physics } from 'use-cannon';
 import {nanoid} from 'nanoid';
 
@@ -25,7 +25,7 @@ function App() {
 
   return (
     <Canvas shadowMap sRGB>
-      <Sky sunPosition={[100, 20, 100]} />
+      <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade />
       <ambientLight intensity={.25} />
       <pointLight castShadow intensity={.7} position={[100, 100, 100]} />
       <Physics gravity={[0, -30, 0]}>
