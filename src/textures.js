@@ -7,6 +7,7 @@ import woodImg from './images/wood.png';
 import diamondImg from './images/diamond.jpg';
 import lampImg from './images/lamp.jpg';
 import iceImg from './images/ice.jpg';
+import cobbImg from './images/cobble.jpg'
 import { TextureLoader } from 'three';
 
 // export const dirt = new TextureLoader().load(dirtImg);
@@ -15,7 +16,7 @@ import { TextureLoader } from 'three';
 // export const glass = new TextureLoader().load(glassImg);
 
 export const snow = new TextureLoader().load(snowImg);
-export const log = new TextureLoader().load(logImg);
+export const cobble = new TextureLoader().load(cobbImg);
 export const diamond = new TextureLoader().load(diamondImg);
 export const lamp = new TextureLoader().load(lampImg);
 export const ice = new TextureLoader().load(iceImg);

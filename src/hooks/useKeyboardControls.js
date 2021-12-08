@@ -16,9 +16,9 @@ function textureByKey(key) {
     const keys = {
         Digit1: 'snow',
         Digit2: 'ice',
-        Digit3: 'lamp',
+        Digit3: 'cobble',
         Digit4: 'diamond',
-        Digit5: 'log'
+        Digit5: 'lamp'
     };
     return keys[key];
 }
