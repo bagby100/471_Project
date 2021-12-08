@@ -2,12 +2,12 @@ import React from 'react';
 import { usePlane } from 'use-cannon';
 import { TextureLoader, RepeatWrapping, NearestFilter, LinearMipMapLinearFilter } from 'three';
 
-import nethOre from '../images/nethOre.jpg';
+import magma from '../images/magma.jpg';
 import { useStore } from '../hooks/useStore';
 
 export const Ground = (props) => {
   const [ref] = usePlane(() => ({ rotation: [-Math.PI / 2, 0, 0], ...props }));
-  const texture = new TextureLoader().load(nethOre);
+  const texture = new TextureLoader().load(magma);
 
   const [addCube, activeTexture] = useStore((state) => [
     state.addCube,

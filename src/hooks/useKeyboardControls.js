@@ -16,7 +16,7 @@ function textureByKey(key) {
     const keys = {
         Digit1: 'nethOre',
         Digit2: 'nethBrick',
-        Digit3: 'glass',
+        Digit3: 'magma',
         Digit4: 'glow',
         Digit5: 'obsidian'
     };

@@ -11,6 +11,7 @@ import nethBrickImg from './images/nethBrick.png';
 import nethOreImg from './images/nethOre.jpg';
 import glowImg from './images/glowstone.png';
 import obsidianImg from './images/obsidian.png';
+import magmaImg from './images/magma.jpg';
 import { TextureLoader } from 'three';
 
 // export const dirt = new TextureLoader().load(dirtImg);
@@ -25,6 +26,6 @@ import { TextureLoader } from 'three';
 
 export const nethOre = new TextureLoader().load(nethOreImg);
 export const nethBrick = new TextureLoader().load(nethBrickImg);
-export const glass = new TextureLoader().load(glassImg);
+export const magma = new TextureLoader().load(magmaImg);
 export const glow = new TextureLoader().load(glowImg);
 export const obsidian = new TextureLoader().load(obsidianImg);
