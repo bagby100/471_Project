@@ -7,6 +7,7 @@ import { FPVControls } from './FPVControls';
 
 
 const SPEED = 6;
+
 export const Player = (props) => {
 
     const {

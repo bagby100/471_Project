@@ -14,10 +14,10 @@ function actionByKey(key){
 
 function textureByKey(key) {
     const keys = {
-        Digit1: 'dirt',
-        Digit2: 'grass',
-        Digit3: 'glass',
-        Digit4: 'wood',
+        Digit1: 'snow',
+        Digit2: 'ice',
+        Digit3: 'lamp',
+        Digit4: 'diamond',
         Digit5: 'log'
     };
     return keys[key];
