@@ -8,11 +8,11 @@ const setLocalStorage = (key, value) =>
 window.localStorage.setItem(key, JSON.stringify(value));
 
 export const useStore = create ((set) => ({
-    cubes: getLocalStorage('world') || [{pos:[0, 1, 0], texture: 'snow'},
-    {pos:[1, 1, 0], texture: 'ice'},
-    {pos:[2, 1, 0], texture: 'cobble'},
-    {pos:[3, 1, 0], texture: 'diamond'},
-    {pos:[4, 1, 0], texture: 'lamp'}],
+    cubes: getLocalStorage('world') || [{pos:[0, 1, 0], texture: 'sand'},
+    {pos:[1, 1, 0], texture: 'sandbrick'},
+    {pos:[2, 1, 0], texture: 'soul'},
+    {pos:[3, 1, 0], texture: 'cactus'},
+    {pos:[4, 1, 0], texture: 'stone'}],
     addCube: (x, y, z, texture) => 
     set(state => ({
         cubes: [...state.cubes, { pos: [x, y, z], texture }],
@@ -25,7 +25,7 @@ export const useStore = create ((set) => ({
     })
     
 ),
-    texture: 'snow',
+    texture: 'sand',
     setTexture: (texture) => set((state) => ({ texture})),
     saveWorld: () => 
         set((state) => {

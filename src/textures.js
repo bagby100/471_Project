@@ -1,22 +1,15 @@
-import dirtImg from './images/dirt.jpg';
-import grassImg from './images/grass.jpg';
-import snowImg from './images/snow.jpg'
-import glassImg from './images/glass.png';
-import logImg from './images/log.jpg';
-import woodImg from './images/wood.png';
-import diamondImg from './images/diamond.jpg';
-import lampImg from './images/lamp.jpg';
-import iceImg from './images/ice.jpg';
-import cobbImg from './images/cobble.jpg'
+import sandImg from './images/sand.png';
+import sandbrickImg from './images/sandbrick.png';
+import soulImg from './images/soul.png';
+import cactusImg from './images/cactus.png';
+import stoneImg from './images/stone.png';
+
 import { TextureLoader } from 'three';
 
-// export const dirt = new TextureLoader().load(dirtImg);
-// export const grass = new TextureLoader().load(grassImg);
-// export const wood = new TextureLoader().load(woodImg);
-// export const glass = new TextureLoader().load(glassImg);
 
-export const snow = new TextureLoader().load(snowImg);
-export const cobble = new TextureLoader().load(cobbImg);
-export const diamond = new TextureLoader().load(diamondImg);
-export const lamp = new TextureLoader().load(lampImg);
-export const ice = new TextureLoader().load(iceImg);
+
+export const sand = new TextureLoader().load(sandImg);
+export const soul = new TextureLoader().load(soulImg);
+export const sandbrick = new TextureLoader().load(sandbrickImg);
+export const cactus = new TextureLoader().load(cactusImg);
+export const stone = new TextureLoader().load(stoneImg);

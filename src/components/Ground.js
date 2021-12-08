@@ -2,12 +2,12 @@ import React from 'react';
 import { usePlane } from 'use-cannon';
 import { TextureLoader, RepeatWrapping, NearestFilter, LinearMipMapLinearFilter } from 'three';
 
-import snow from '../images/snow.jpg';
+import sand from '../images/sand.png';
 import { useStore } from '../hooks/useStore';
 
 export const Ground = (props) => {
   const [ref] = usePlane(() => ({ rotation: [-Math.PI / 2, 0, 0], ...props }));
-  const texture = new TextureLoader().load(snow);
+  const texture = new TextureLoader().load(sand);
 
   const [addCube, activeTexture] = useStore((state) => [
     state.addCube,
