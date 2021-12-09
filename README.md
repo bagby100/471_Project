@@ -1,11 +1,5 @@
 # Welcome to React three fiber Minecraft
 
-This project is just me trying to mimic Minecraft in React.
-How i did it can be seen in this Youtube video:
-[![Video preview](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
-
-Demo: TODO
-
 ## How to play?
 
 Currently it has 5 types of blocks: Grass, Wood, Log, Glass and Dirt.
